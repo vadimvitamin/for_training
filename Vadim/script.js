@@ -7,73 +7,61 @@
 //  7 inludes
 //  8 методи роботи з масивом
 
-
-
-
 // let a = 10;
 // a = 14;
-
-// const arr =[1,2,3];
-// arr.splice(1,1)
+// *********************************************
+// const arr = [1, 2, 3];
+// arr.splice(1, 1);
 // console.log(arr);
-
-// const user ={
-//     name : 'user',
-//     age: 27
-// }
-// delete user.age
+// ************************************************
+// const user = {
+//   name: "user",
+//   age: 27,
+// };
+// delete user.age;
 // console.log(user);
-// const test = 'asd';
-
+// ****************************************************
+// const test = "asd";
 // let test2;
 // console.log(test2);
+// **************використання var***********************
 // console.log(a);
 // var a;
-
 // var a = 10;
 // console.log(a);
 // var a = 15;
 // console.log(a);
-
-
-
+// ************************************************
 // if (true) {
-//     let a = 99;
-//     a = 15;
-//     console.log(a);
+//   let a = 99;
+//   a = 15;
+//   console.log(a);
 // }
-
-
 
 // let a = 10;
 // if (true) {
-//     if (true) {
-//         a = 99;
-//     }
-//     if (true) {
-//         let a = 1;
-//     }
-//     a = 16;
+//   if (true) {
+//     a = 99;
+//   }
+//   if (true) {
+//     let a = 1;
+//   }
+//   a = 16;
 // }
 // console.log(a);
-
-
 
 // let a = 10;
 // let b = a;
 // a = 15;
 // console.log(b);
 
-// let a = [1,2,3];
+// let a = [1, 2, 3];
 // let b = a;
 
+// a.splice(1, 1);
 
-
-// a.splice(1,1)
-
-
-// console.log('a',a);
-// console.log('b',b);
+// console.log("a", a);
+// console.log("b", b);
 
 // && || ! ??
 // && він повертає перший false або останій true, для свого виконання потребує зліва та з права true
@@ -97,6 +85,3 @@
 //  ??  => 2 значення null undefined
 
 // console.log(undefined ?? null);
-
-
-
