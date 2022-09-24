@@ -185,54 +185,137 @@
 // 2 Мову програмування яку потрібно знайти.
 // Функція повертає масив імен користувачів які вивчають цю мову.
 
-const students = [
+// const students = [
+//   {
+//     name: `Lika`,
+//     langunage: `html`,
+//   },
+//   {
+//     name: `Anton`,
+//     langunage: `css`,
+//   },
+//   {
+//     name: `Andriy`,
+//     langunage: `js`,
+//   },
+//   {
+//     name: `Vova`,
+//     langunage: `html`,
+//   },
+//   {
+//     name: `Alina`,
+//     langunage: `css`,
+//   },
+//   {
+//     name: `Egor`,
+//     langunage: `js`,
+//   },
+//   {
+//     name: `Aleksandr`,
+//     langunage: `html`,
+//   },
+//   {
+//     name: `Taras`,
+//     langunage: `css`,
+//   },
+//   {
+//     name: `Ivan`,
+//     langunage: `js`,
+//   },
+//   {
+//     name: `Make`,
+//     langunage: `html`,
+//   },
+// ];
+
+// function newStudents(arr, langunageName) {
+//   const users = arr.filter((element) => element.langunage === langunageName);
+//   console.log(users);
+//   const userList = users.map((user) => user.name);
+//   console.log(userList);
+// }
+
+// newStudents(students, "html");
+// ****************************************************
+// За допомогою методу forEach потрібно заповнити масив uploadedFiles
+// baseUrl потрібно передати, як this
+
+// const imagesName = ["car", "grass", "avatar", "user", "sea", "water", "bird"];
+// const baseUrl = "domain-name.com";
+// let uploadedFiles = [];
+
+// const resultUploadedFiles = [
+//   "domain-name.com/upload/car",
+//   "domain-name.com/upload/grass",
+//   "domain-name.com/upload/avatar",
+//   "domain-name.com/upload/user",
+//   "domain-name.com/upload/sea",
+//   "domain-name.com/upload/water",
+//   "domain-name.com/upload/bird",
+// ];
+
+// imagesName.forEach(function (element) {
+//   uploadedFiles.push(`${baseUrl}/upload/${element}`);
+// }, baseUrl);
+// console.log(uploadedFiles);
+// ******************************************************************переписати з мап
+// Напишіть функцію addItemToBasket, яка буде за допомогою методу find перевіряти, чи є вже такий продукт в кошику
+// Якщо він є, то потроібно оновити його в коризні
+// Якщо немає, то потрібно додати новий продукт до кошику покупок
+
+// Після цього порахувати суму всіх покупок і вивести total;
+
+let total = 0;
+
+const product1 = {
+  id: 33,
+  title: "T-shirt",
+  price: 99,
+  count: 1,
+};
+
+const product2 = {
+  id: 29,
+  title: "Jeans",
+  price: 199,
+  count: 1,
+};
+
+const basketItems = [
   {
-    name: `Lika`,
-    langunage: `html`,
+    id: 28,
+    title: "iPhone 14",
+    price: 1599,
+    count: 3,
   },
   {
-    name: `Anton`,
-    langunage: `css`,
-  },
-  {
-    name: `Andriy`,
-    langunage: `js`,
-  },
-  {
-    name: `Vova`,
-    langunage: `html`,
-  },
-  {
-    name: `Alina`,
-    langunage: `css`,
-  },
-  {
-    name: `Egor`,
-    langunage: `js`,
-  },
-  {
-    name: `Aleksandr`,
-    langunage: `html`,
-  },
-  {
-    name: `Taras`,
-    langunage: `css`,
-  },
-  {
-    name: `Ivan`,
-    langunage: `js`,
-  },
-  {
-    name: `Make`,
-    langunage: `html`,
+    id: 29,
+    title: "Jeans",
+    price: 199,
+    count: 2,
   },
 ];
-
-function newStudents(arr, langunageName) {
-  const users = arr.filter((element) => element.langunage === langunageName);
-  console.log(users);
-  const userList = users.map((user) => user.name);
-  console.log(userList);
+function addItemToBasket(product) {
+  const newProduct = basketItems.find((el) => Element.id === product.id);
+  console.log(newProduct);
+  if (!newProduct) {
+    return [...basketItems, product];
+  } else {
+    basketItems.map((el) => {
+      if (el.id === product.id) {
+        return {
+          ...el,
+          count: el.count + 1,
+        };
+      } else return el;
+    });
+  }
 }
+addItemToBasket(product1);
+addItemToBasket(product2);
 
-newStudents(students, "html");
+// *******************************************************
+// Потрібно отримати URL адресу із адресного рядка бразуера.
+// Далі необхідно параметри запиту записати в об'єкт  (query) - ключ, значення (axios)
+
+// url = https://www.npmjs.com/?query=axios&version=0.3&module=render&size=32&date=12212183311
