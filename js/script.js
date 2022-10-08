@@ -265,57 +265,81 @@
 
 // Після цього порахувати суму всіх покупок і вивести total;
 
-let total = 0;
+// let total = 0;
 
-const product1 = {
-  id: 33,
-  title: "T-shirt",
-  price: 99,
-  count: 1,
-};
+// const product1 = {
+//   id: 33,
+//   title: "T-shirt",
+//   price: 99,
+//   count: 1,
+// };
 
-const product2 = {
-  id: 29,
-  title: "Jeans",
-  price: 199,
-  count: 1,
-};
+// const product2 = {
+//   id: 29,
+//   title: "Jeans",
+//   price: 199,
+//   count: 1,
+// };
 
-const basketItems = [
-  {
-    id: 28,
-    title: "iPhone 14",
-    price: 1599,
-    count: 3,
-  },
-  {
-    id: 29,
-    title: "Jeans",
-    price: 199,
-    count: 2,
-  },
-];
-function addItemToBasket(product) {
-  const newProduct = basketItems.find((el) => Element.id === product.id);
-  console.log(newProduct);
-  if (!newProduct) {
-    return [...basketItems, product];
-  } else {
-    basketItems.map((el) => {
-      if (el.id === product.id) {
-        return {
-          ...el,
-          count: el.count + 1,
-        };
-      } else return el;
-    });
-  }
-}
-addItemToBasket(product1);
-addItemToBasket(product2);
+// const basketItems = [
+//   {
+//     id: 28,
+//     title: "iPhone 14",
+//     price: 1599,
+//     count: 3,
+//   },
+//   {
+//     id: 29,
+//     title: "Jeans",
+//     price: 199,
+//     count: 2,
+//   },
+// ];
+// function addItemToBasket(product) {
+//   const newProduct = basketItems.find((el) => Element.id === product.id);
+//   console.log(newProduct);
+//   if (!newProduct) {
+//     return [...basketItems, product];
+//   } else {
+//     basketItems.map((el) => {
+//       if (el.id === product.id) {
+//         return {
+//           ...el,
+//           count: el.count + 1,
+//         };
+//       } else return el;
+//     });
+//   }
+// }
+// addItemToBasket(product1);
+// addItemToBasket(product2);
 
 // *******************************************************
 // Потрібно отримати URL адресу із адресного рядка бразуера.
 // Далі необхідно параметри запиту записати в об'єкт  (query) - ключ, значення (axios)
 
-// url = https://www.npmjs.com/?query=axios&version=0.3&module=render&size=32&date=12212183311
+// const url =
+//   "https://www.npmjs.com/?query=axios&version=0.3&module=render&size=32&date=12212183311";
+
+// // console.log(window.location);
+// console.log(url);
+// const link = new URL(url);
+// console.log(link);
+// const search = link.search.slice(1);
+// console.log(search);
+// const arrQuery = search.split("&");
+// console.log(arrQuery);
+// const objQuery = arrQuery.reduce((obj, item) => {
+//   const [key, value] = item.split("=");
+//   //   console.log(values);
+//   obj[key] = value;
+//   console.log(obj);
+//   return obj;
+// }, {});
+// console.log(objQuery);
+// ***************************************************
+// Напишіть метод, який очищає масив від усіх непотрібних елементів, таких як false, undefined, порожні рядки, нуль, null
+
+const data = [0, 1, false, 2, undefined, "", 3, null];
+const filter
+console.log(compact(data)); // [1, 2, 3]
