@@ -647,3 +647,50 @@
 //     </tbody>
 //   </table>
 // </div>
+// ***************************
+// Отримати дані з API і вивести їх на сторінку
+//catfact.ninja/fact
+// https: fetch("https://catfact.ninja/fact/")
+//     .then => (data => data.json())
+//         .then((result) => {
+//             console.log(result.data);
+//             const res = arrData = result.data
+//             arrData.map(({fact}))
+//     }).join('');
+// list.insertAdjacentHTML('beforeEnd'arrData)
+// ************************************************
+// / Отримати дані з API і вивести їх на сторінку
+// // https://dog.ceo/dog-api/
+// let number = 3
+// fetch(`https://dog.ceo/dog-api/`)
+// ****************************************
+// Отримати дані з API та вивести їх на сторінку
+// http://universities.hipolabs.com/search?country=Ukraine
+// http://universities.hipolabs.com/search?country=United+States
+
+// const inputRef = document.querrySelector("#country");
+// const btnRef = document.querySelector("#search");
+
+// const link = "http://universities.hipolabs.com/search?country=Ukraine";
+// btnRef;
+
+// function searchUnivers() {}
+// ***************************************************************
+// Отримати дані з API і вивести їх на сторінку
+// http://numbersapi.com/
+// **********************************
+// / Отримати дані з API і вивести їх на сторінку
+// // https://agify.io/
+// ******************************************
+// / Отримати дані з API та вивести їх на сторінку
+// // http://colormind.io/
+// *************************************************
+// Отримати дані з API і вивести їх на сторінку
+// https://deckofcardsapi.com/
+// *****************************************
+// Отримати дані з API і вивести їх на сторінку
+// https://randomuser.me/
+// *********************************************
+// Отримати дані з API і вивести їх на сторінку
+//https://reqres.in/
+// ************************************
